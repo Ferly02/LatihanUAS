@@ -4,16 +4,16 @@
 ## Profil
 | Variable | Isi |
 | -------- | --- |
-| **Nama** | MICHAEL NICHOLAS KARDONO |
-| **NIM** | 312310568 |
+| **Nama** | FERLY ARDIANSYAH |
+| **NIM** | 312310448 |
 | **Kelas** | TI.23.A5 |
 | **Mata Kuliah** | Basis data |
 
 # ER-D
-![alt text](Screenshot/ER-D.png)
+![alt text](UAS-2-main/UAS-2-main/Screenshot/ER-D.png)
 
 # Input Data
-![alt text](Screenshot/Tabel.png)
+![alt text](UAS-2-main/UAS-2-main/Screenshot/Tabel.png)
 
 # Soal latihan praktikum 7
 Berdasarkan ERD dan Sampel Data diatas buatlah Query SQL untuk:
@@ -34,7 +34,7 @@ WHERE id_dept = (SELECT id_dept FROM departemen WHERE manajer_nik = 'N03');
 
 **Output :**
 
-![alt text](Screenshot/1.png)
+![alt text](UAS-2-main/UAS-2-main/Screenshot/1.png)
 
 ### 2. Menampilkan Nama Proyek yang dikerjakan oleh Karyawan dari Departemen 'RnD'
 **Script :**
@@ -50,7 +50,7 @@ WHERE Departemen.nama = 'RnD';
 
 **Output :**
 
-![alt text](Screenshot/2.png)
+![alt text](UAS-2-main/UAS-2-main/Screenshot/2.png)
 
 ### 3. Menampilkan Nama Karyawan yang Terlibat dalam Lebih dari Satu Proyek
 **Script :**
@@ -65,7 +65,7 @@ HAVING COUNT(Project_detail.id_proj) > 1;
 
 **Output :**
 
-![alt text](Screenshot/3.png)
+![alt text](UAS-2-main/UAS-2-main/Screenshot/3.png)
 
 ### 4. Menampilkan Nama Proyek yang melibatkan Karyawan terbanyak.
 **Script :**
@@ -81,7 +81,7 @@ LIMIT 1;
 
 **Output :**
 
-![alt text](Screenshot/4.png)
+![alt text](UAS-2-main/UAS-2-main/Screenshot/4.png)
 
 ### 5. Menampilkan Nama Proyek yang Diikuti oleh Karyawan dengan Gaji Pokok Kurang dari 3 Juta
 **Script :**
@@ -96,4 +96,4 @@ WHERE Karyawan.gaji_pokok < 3000000;
 
 **Output :**
 
-![alt text](Screenshot/5.png)
+![alt text](UAS-2-main/UAS-2-main/Screenshot/5.png)
